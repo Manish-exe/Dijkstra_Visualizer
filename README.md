@@ -1,4 +1,4 @@
-# Shortest Path Finder
+# Shortest Path Finder Visualizer
 
 ## Overview
 
