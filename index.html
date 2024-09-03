@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shortest Path Finder</title>
+</head>
+<body>
+        <header>
+            <div class="title">
+                <a href="index.html" class="heeading">Shortest Path Finder</a>
+                <a href="./instruction.html"
+                ><img
+                  src="https://cdn4.iconfinder.com/data/icons/web-mobile1/100/Untitled-8-512.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="options">
+                <div>
+                    <button class="option-btn" id = "add-edge-enable" onclick="addEdges()">
+                        Add edges
+                    </button>
+                    <button class="option-btn reset-btn" onclick="resetDrawingArea()" disabled>
+                        Clear
+                    </button>
+                </div>
+                <div>
+                    <input type="text" inputmode="numeric" class="src-node" placeholder="Source Node" />
+                    <button class="option-btn run-btn" onclick = "findShortestPath(this)" disabled>
+                         Run
+                     </button>
+                </div>
+            </div>
+        </header>
+        <div class="drawing-area">
+            <p class="click-instruction">Click to create node</p>
+        </div>
+        <div class="path"></div>
+
+        <script src="./script.js"></script>
+        <footer>
+            <p>Created/Developed By <span>Manish Kumar</span></p>
+        </footer>
+</body>
+</html>
